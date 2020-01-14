@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Movies App</string>
+    <string name="overview">A volcanic eruption threatens the remaining dinosaurs on the island of Isla Nublar</string>
+    <string name="overview2">The Mercenary with a mouth is back with the eagerly awaited arrival of “Deadpool 2”. The films sees the generally well-meaning but highly dysfunctional Deadpool (Ryan Reynolds), back to taking out bad guys as a contract player but also managing his relationship with Vanessa (Morena Baccarin).  When an unexpected event sends his life into a freefall, Deadpool tries to find a new purpose with the help of his X-Men</string>
+    <string name="release_date">2018-06-06</string>
+    <string name="popular">Popular</string>
+    <string name="rating">Rating</string>
+    <string name="favorite">Favorites</string>
+    <string name="author">garethmb</string>
+    <string name="detail_rating">8.1/10</string>
+</resources>

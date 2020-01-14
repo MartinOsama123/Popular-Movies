@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:fillViewport="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/thumbnail_padding"
+            android:paddingTop="@dimen/thumbnail_padding"
+            android:src="@drawable/test_image" />
+
+        <TextView
+            android:id="@+id/releaseText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/release_marginend"
+            android:layout_marginRight="@dimen/release_marginright"
+            android:layout_marginStart="@dimen/release_marginstart"
+            android:layout_marginTop="@dimen/release_margintop"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/release_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.111"
+            app:layout_constraintStart_toEndOf="@+id/thumbnail"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/release_date" />
+
+        <TextView
+            android:id="@+id/ratingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/rating_marginend"
+            android:layout_marginStart="@dimen/rating_marginstart"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/rating_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/thumbnail"
+            app:layout_constraintTop_toBottomOf="@+id/releaseText"
+            tools:text="@string/detail_rating" />
+
+        <ImageButton
+            android:id="@+id/starButton"
+            android:layout_width="@dimen/starbutton_layout"
+            android:layout_height="@dimen/starbutton_layout"
+            android:layout_marginEnd="@dimen/starbutton_margin"
+            android:layout_marginStart="@dimen/starbutton_margin"
+            android:layout_marginTop="@dimen/starbutton_margin"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="fitXY"
+            android:src="@drawable/star_white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.378"
+            app:layout_constraintStart_toEndOf="@+id/thumbnail"
+            app:layout_constraintTop_toBottomOf="@+id/ratingText" />
+
+        <TextView
+            android:id="@+id/overviewText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/overview_marginbottom"
+            android:layout_marginEnd="@dimen/overview_marginend"
+            android:layout_marginStart="@dimen/overview_marginstart"
+            android:paddingLeft="@dimen/overview_padding"
+            android:paddingRight="@dimen/overview_padding"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/overview_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.666"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/thumbnail"
+            app:layout_constraintVertical_bias="0.012"
+            tools:text="@string/overview" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewTrailer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/recycle_trailer_marginbottom"
+            android:layout_marginEnd="@dimen/recycle_trailer_marginEST"
+            android:layout_marginStart="@dimen/recycle_trailer_marginEST"
+            android:layout_marginTop="@dimen/recycle_trailer_marginEST"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/overviewText"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleViewReview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/recylce_review_marginbottom"
+            android:layout_marginEnd="@dimen/recycle_review_marginES"
+            android:layout_marginStart="@dimen/recycle_review_marginES"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.024"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerViewTrailer"
+            app:layout_constraintVertical_bias="0.082" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
+
